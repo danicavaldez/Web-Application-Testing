@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Display from './components/Display.js'
-import Dashboard from "./components/Dashboard"
+import Dashboard from './components/Dashboard'
 
 import './App.css';
 

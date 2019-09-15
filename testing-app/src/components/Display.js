@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Display(){
+export default function Display({ ball, strike }) {
   return(
     <div>
-      <p>Balls:</p>
-      <p>strikes:</p>
+      <p>Balls: {ball}</p>
+      <p>strikes: {strike}</p>
     </div>
   )
 }
