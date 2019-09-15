@@ -13,8 +13,8 @@ function App() {
   return (
     <div>
       <h1>Baseball App</h1>
-      <Display ball={ball} setBall={setBall} strike={strike} setStrike={setStrike} foul={foul} setFoul={setFoul} hit={hit} setHit={setHit} />
-      <Dashboard ball={ball} strike={strike} />
+      <Display ball={ball} strike={strike} />
+      <Dashboard ball={ball} setBall={setBall} strike={strike} setStrike={setStrike} foul={foul} setFoul={setFoul} hit={hit} setHit={setHit} />
     </div>
   );
 }
