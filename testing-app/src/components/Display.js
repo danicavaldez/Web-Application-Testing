@@ -4,7 +4,7 @@ export default function Display({ ball, strike }) {
   return(
     <div>
       <p>Balls: {ball}</p>
-      <p>strikes: {strike}</p>
+      <p>Strikes: {strike}</p>
     </div>
   )
 }

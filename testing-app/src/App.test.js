@@ -1,9 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { render } from "@testing-library/react";
+import App from './App.js'
+import { addStrike } from './components/Dashboard'
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+
+test('App renders without crashing', () => {
+  render(<App />)
+})
+
+test('Contains balls and strikes tracker', () => {
+  const {getByText} = render(<App />);
+  getByText(/balls/i)
+  getByText(/strikes/i)
+})
